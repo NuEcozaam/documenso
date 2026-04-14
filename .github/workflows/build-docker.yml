@@ -1,0 +1,22 @@
+name: Build and Push NuEcozaam Image
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  publish_image:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+
+      - name: Login to Docker Hub
+        run: docker login -u "leonardodocker7" -p "${{ secrets.DOCKER_HUB_TOKEN }}"
+
+      - name: Build Image
+        run: docker build . -t leonardodocker7/documenso-nuecozaam:latest
+
+      - name: Push Image
+        run: docker push leonardodocker7/documenso-nuecozaam:latest
