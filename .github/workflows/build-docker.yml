@@ -16,7 +16,7 @@ jobs:
         run: docker login -u "leonardodocker7" -p "${{ secrets.DOCKER_HUB_TOKEN }}"
 
       - name: Build Image
-        run: docker build . -t leonardodocker7/documenso-nuecozaam:latest
+        run: docker build -f docker/Dockerfile . -t leonardodocker7/documenso-nuecozaam:latest
 
       - name: Push Image
         run: docker push leonardodocker7/documenso-nuecozaam:latest
