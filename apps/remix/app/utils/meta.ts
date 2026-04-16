@@ -4,11 +4,11 @@ import { NEXT_PUBLIC_WEBAPP_URL } from '@documenso/lib/constants/app';
 
 export const appMetaTags = (title?: MessageDescriptor) => {
   const description =
-    'Join Documenso, the open signing infrastructure, and get a 10x better signing experience. Pricing starts at $30/mo. forever! Sign in now and enjoy a faster, smarter, and more beautiful document signing process. Integrates with your favorite tools, customizable, and expandable. Support our mission and become a part of our open-source community.';
+    'Uw beveilidge omgeving om uw offertes te ondertekenen, zodat we kunnen starten met het verduurzamen van uw woning.';
 
   return [
     {
-      title: title ? `${i18n._(title)} - Documenso` : 'Documenso',
+      title: title ? `${i18n._(title)} - NuEcozaam SIGN` : 'NuEcozaam',
     },
     {
       name: 'description',
@@ -17,7 +17,7 @@ export const appMetaTags = (title?: MessageDescriptor) => {
     {
       name: 'keywords',
       content:
-        'Documenso, open source, DocuSign alternative, document signing, open signing infrastructure, open-source community, fast signing, beautiful signing, smart templates',
+        'Uw beveilidge omgeving om uw offertes te ondertekenen, zodat we kunnen starten met het verduurzamen van uw woning.',
     },
     {
       name: 'author',
@@ -29,7 +29,7 @@ export const appMetaTags = (title?: MessageDescriptor) => {
     },
     {
       property: 'og:title',
-      content: 'Documenso - The Open Source DocuSign Alternative',
+      content: 'NuEcozaam - Uw Partner In Verduurzaming',
     },
     {
       property: 'og:description',
