@@ -140,7 +140,7 @@
 
     --envelope-editor-background: 210 40% 98.04%;
   }
-  
+}
  .dark:not(.dark-mode-disabled) {
     --background: 0 0% 14.9%;
     --foreground: 0 0% 97%;
